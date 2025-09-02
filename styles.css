@@ -1,0 +1,119 @@
+body.dark-mode, .widget-overlay {
+  background: #181829;
+  color: #e9e9ff;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.popup-container, .widget-container {
+  width: 100%;
+  max-width: 400px;
+  min-height: 500px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px #0006;
+  background: linear-gradient(135deg, #181829 80%, #2b2b44 100%);
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #00f6;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  color: #a7bfff;
+  margin: 0 0 6px 0;
+}
+.tab-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.tab-btn {
+  background: #232345;
+  color: #a7bfff;
+  border: none;
+  border-radius: 12px;
+  padding: 7px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.tab-btn.active, .tab-btn:focus {
+  background: linear-gradient(90deg,#3a3add,#b100c2);
+  color: #fff;
+  box-shadow: 0 2px 8px #00f6;
+}
+.tab-content {
+  display: none;
+  margin-top: 10px;
+}
+.tab-content.active {
+  display: block;
+}
+.gradient-btn {
+  background: linear-gradient(90deg, #0ff 0%, #7f00ff 100%);
+  color: #181829;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 8px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: box-shadow 0.25s, transform 0.15s;
+  box-shadow: 0 2px 8px #7f00ff44;
+}
+.gradient-btn:hover {
+  box-shadow: 0 4px 16px #7f00ff99;
+  transform: translateY(-2px) scale(1.04);
+}
+input, textarea {
+  background: #232345;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  outline: none;
+  margin-bottom: 10px;
+}
+footer {
+  border-top: 1px solid #232345;
+  padding-top: 10px;
+  text-align: center;
+  color: #6666a6;
+  font-size: 0.98em;
+}
+.widget-container {
+  padding: 16px 10px;
+  box-shadow: 0 2px 16px #000c;
+}
+.widget-section {
+  margin-bottom: 14px;
+  background: #232345;
+  border-radius: 12px;
+  padding: 10px 13px;
+  box-shadow: 0 1px 6px #7f00ff22;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #232345;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3add;
+  border-radius: 6px;
+}
